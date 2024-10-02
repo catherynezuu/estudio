@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="x.js" defer></script>
+</head>
+<body>
+    <header class="header-top">
+        <div class="header-logo">
+            <img class="header-logo" src="./static/img/elico.png" alt="Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="nav-item-selected"><a href="index4.html">Dashboard Mantenimiento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="document-main">
+        <section class="dashboards-group">
+            <header class="summarize">
+                <h2 class="title">Mantenimiento</h2>
+                <h5 class="caption">Wednesday, 22 May 2024 06:00:00 - Wednesday, 22 May 2024 13:59:59</h5>
+            </header>
+
+            <div class="dashboards-section">
+                <div class="dash-container">
+                    <header>
+                        <h4 class="card-title">Distribución de consumo energético total (Kwh)</h4>
+                        <h6 class="card-subtitle"></h6>
+                    </header>
+                    <div id="failures-count-dash" style="width: 400px; height: 300px;"></div>
+                </div>
+
+                <div class="dash-container">
+                    <header>
+                        <h4 class="card-title">Comparación de KPIs vs esperados</h4>
+                        <h6 class="card-subtitle"></h6>
+                    </header>
+                    <div id="failures-types-dash" style="width: 400px; height: 300px;"></div>
+                </div>
+
+                <div class="dash-container">
+                    <header>
+                        <h4 class="card-title">Consumo energético vs referencia</h4>
+                        <h6 class="card-subtitle"></h6>
+                    </header>
+                    <div id="failures-equipment-dash" style="width: 400px; height: 300px;"></div>
+                </div>
+
+                <div class="dash-container">
+                    <header>
+                        <h4 class="card-title">Contribución al consumo energético total</h4>
+                        <h6 class="card-subtitle"></h6>
+                    </header>
+                    <div id="kpi-dash" style="width: 400px; height: 300px;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
